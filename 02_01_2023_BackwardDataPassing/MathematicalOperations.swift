@@ -7,6 +7,7 @@
 
 import Foundation
 protocol MathematicalOperations{
+    //when class MathematicalOperations is created - define members and member functions of the class
     
     /*var numberOne : Int
     var numberTwo : Int
