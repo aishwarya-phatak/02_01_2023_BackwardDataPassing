@@ -15,7 +15,8 @@ class ThirdViewController: UIViewController, MathematicalOperations{
     
     var numberOne : Int?
     var numberTwo : Int?
-    var resultOfAddition : Int?
+    //var resultOfAddition : Int?
+    var result : Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +26,10 @@ class ThirdViewController: UIViewController, MathematicalOperations{
         
         numberOne = Int(numberOneTextfield.text!)
         numberTwo = Int(numberTwoTextField.text!)
-        resultOfAddition = addition(n1: numberOne!, n2: numberTwo!)
-        self.resultLabel.text = (resultOfAddition?.codingKey.stringValue)
+        result = addition(n1: numberOne!, n2: numberTwo!)
+        self.resultLabel.text = (result?.codingKey.stringValue)
         
-        print(resultOfAddition!)
+        print(result!)
     }
     
     func addition(n1 : Int, n2 : Int)->Int {
